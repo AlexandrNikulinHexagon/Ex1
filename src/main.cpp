@@ -83,8 +83,8 @@ public:
     {
     public:
         const_iterator& operator++() noexcept {
-            T::const_iterator::operator++();
-            T::const_iterator::operator=(std::find_if(static_cast<T::const_iterator&>(*this), end, filter));
+            typename T::const_iterator::operator++();
+            typename T::const_iterator::operator=(std::find_if(static_cast<T::const_iterator&>(*this), end, filter));
 
             return *this;
         }
@@ -92,7 +92,7 @@ public:
         const_iterator(const typename T::const_iterator& it, const typename T::const_iterator& e, const Filter& f) :
             T::const_iterator(it), filter(f), end(e)
         {
-            T::const_iterator::operator=(std::find_if(static_cast<T::const_iterator&>(*this), end, filter));
+            typename T::const_iterator::operator=(std::find_if(static_cast<T::const_iterator&>(*this), end, filter));
         }
         const Filter& filter;
         const typename T::const_iterator end;
