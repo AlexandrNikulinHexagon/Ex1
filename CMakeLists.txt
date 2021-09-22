@@ -9,7 +9,7 @@ project(ip_filter VERSION 0.0.$ENV{GITHUB_RUN_NUMBER})
 #  BUILD
 #    missing 
 #)
-
+set(CMAKE_CXX_STANDARD 17)
 #option(BUILD_TESTS "Build unittests" OFF)
 
 #include_directories(${PROJECT_SOURCE_DIR})
