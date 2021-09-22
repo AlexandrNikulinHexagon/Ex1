@@ -17,7 +17,7 @@ class CmdBimTag
         int m_updateType = 1;
     };
     
-    static inline SavedSettings s_settings;
+    static inline SavedSettings s_settings();
 };
 
 int main()
