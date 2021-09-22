@@ -14,7 +14,7 @@ class CmdBimTag
     class SavedSettings
     {
     public:
-        SavedSettings()=default;
+        SavedSettings(){};
         int m_updateType = 1;
     };
     
