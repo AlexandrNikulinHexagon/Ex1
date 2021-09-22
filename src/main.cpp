@@ -22,7 +22,7 @@ class CmdBimTag
 
 int main()
 {
-    CmdBimTag t;
+    //CmdBimTag t;
     printf("Hello World %d", CmdBimTag::s_settings.m_updateType);
 
     return 0;
